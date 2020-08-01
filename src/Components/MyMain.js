@@ -3,9 +3,9 @@ import React from 'react'
 function MyMain(){
     return(
         <main>
-            <ul><b>Stuff Goes Here</b>
-                <li>And Here Too</li>
-            </ul>
+            <input type="checkbox"/><span>Learn React</span><br/>
+            <input type="checkbox" /><span>Get Good</span><br />
+            <input type="checkbox" /><span>Get Money</span><br />
         </main>
     )
 }

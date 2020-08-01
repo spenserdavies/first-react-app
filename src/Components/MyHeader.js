@@ -2,9 +2,9 @@ import React from 'react'
 
 function MyHeader(){
     return(
-        <footer>
-            <h1>This is my Header</h1>
-        </footer>
+        <header className="navbar">
+            TODO List
+        </header>
     )
 }
 
