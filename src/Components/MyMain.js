@@ -1,12 +1,20 @@
 import React from 'react'
+import TodoItem from './TodoItem'
 
 function MyMain(){
+    let styles = {
+        color: "#FF8C00",
+        fontSize: 32,
+        textAlign: 'center'
+        }
     return(
-        <main className="my-main">
-            <p>Good {getTime()}!</p>
-            <input type="checkbox"/><span>Learn React</span><br/>
-            <input type="checkbox" /><span>Get Good</span><br />
-            <input type="checkbox" /><span>Get Money</span><br />
+        <main className="todo-list">
+            <p style={styles}>Its {getTime()} time</p>
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+
         </main>
     )
 }
@@ -16,11 +24,11 @@ function getTime(){
     let hours = date.getHours();
     let timeOfDay;
     if(hours < 12){
-        timeOfDay = "Morning"
+        timeOfDay = "morning"
     } else if(hours >= 12 && hours < 17){
-        timeOfDay = "Evening"
+        timeOfDay = "evening"
     } else {
-        timeOfDay = "Night"
+        timeOfDay = "night"
     }
     return timeOfDay;
 }
