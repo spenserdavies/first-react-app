@@ -1,15 +1,39 @@
 body{
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+.my-main{
+    background-color: rgb(245, 245, 245);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    flex-grow: 1;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
 .navbar{
     background-color: #333;
     height: 100px;
     color: whitesmoke;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     text-align: center;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.the-bottom{
+    background-color: #333;
+    margin: 0;
+    padding: 1em;
+    height: 50px;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }

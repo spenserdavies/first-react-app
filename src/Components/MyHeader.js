@@ -3,7 +3,7 @@ import React from 'react'
 function MyHeader(){
     return(
         <header className="navbar">
-            TODO List
+            Todo List
         </header>
     )
 }
