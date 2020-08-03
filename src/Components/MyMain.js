@@ -10,10 +10,10 @@ function MyMain(){
     return(
         <main className="todo-list">
             <p style={styles}>Its {getTime()} time</p>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            <TodoItem todo={{task: "Get Money"}}/>
+            <TodoItem todo={{task: "Get More"}}/>
+            <TodoItem todo={{task: "Jakes Mom"}}/>
+            <TodoItem todo={{task: "Jakes Mom Again"}}/>
 
         </main>
     )
