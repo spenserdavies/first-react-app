@@ -1,7 +1,9 @@
 import React from 'react'
 import TodoItem from './TodoItem'
+import todosData from "./todosData"
 
 function MyMain(){
+    const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
     let styles = {
         color: "#FF8C00",
         fontSize: 32,
@@ -10,11 +12,7 @@ function MyMain(){
     return(
         <main className="todo-list">
             <p style={styles}>Its {getTime()} time</p>
-            <TodoItem todo={{task: "Get Money"}}/>
-            <TodoItem todo={{task: "Get More"}}/>
-            <TodoItem todo={{task: "Jakes Mom"}}/>
-            <TodoItem todo={{task: "Jakes Mom Again"}}/>
-
+            {todoItems}
         </main>
     )
 }
